@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <img src="images/logotipo.svg" alt="logotipo" draggable="false">
+
+            <span>
+                <select name="laguage" id="laguage-01" class="laguage-select">
+                <option value="portugues">Português</option>
+                <option value="english">English</option>
+            </select>
+                <a href="https://www.netflix.com/br/login" class="red-button enter">Entrar</a>
+            </span>
+        </nav>
+
+        <div class="header-mid">
+            <div class="header-text">
+                <h1>Filmes, séries e muito mais. Sem limites.</h1>
+                <h2>Assista onde quiser. Cancele quando quiser.</h2>
+            </div>
+            
+            <div class="login">
+                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                <div class="inputs">
+                    <input type="email" name="email" id="email-1" placeholder="Email" class="email-input">
+                    <div class="button">
+                           <input type="button" value="Vamos lá" class="red-button email-comit">
+                           <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg" width="10"  height="20" ><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill="#FFFFFF" fill-rule="evenodd"></path></svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="animation-card whath-on-tv">
+            <div class="animation-card-container tv-animation-card-container">
+                <div class="text">
+                    <h1>Aproveite na TV.</h1>
+                    <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</h2>
+                </div>
+                <picture class="animation">
+                    <img src="images/tv.png" alt="tv" class="animation-image image-tv">
+                    <video src="videos/site-navegation.m4v" draggable="false" loop="" autoplay="" controls="desable" class="animation-video video-tv"></video>
+                </picture>
+            </div>
+        </section>
+            <section class="animation-card">
+            <div class="animation-card-container mobile-animation-card-container">
+                <div class="text wath-offline-text">
+                    <h1>Baixe séries para assistir offline.</h1>
+                    <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
+                </div>
+                <picture class="animation animation-mobile">
+                    <img src="images/mobile.jpg" alt="tv" class="animation-image image-mobile">
+                    <div class="interative-animation-download">
+                        <img src="images/strangerthinks-baner.png" alt="Stranger Things image" class="stranger-things-image">
+                        <div class="strangerthinks-text">
+                            <p id="p1">Stranger Things</p>
+                            <p id="p2">Download em andamento...</p>
+                        </div>
+                        <div class="donload-ico"></div>
+                    </div>
+                </picture>
+            </div>
+        </section>
+        <section class="animation-card device-pile-animation-card">
+            <div class="animation-card-container device-pile-animation-card-container">
+                <div class="text device-pile-text">
+                    <h1>Assista quando quiser.</h1>
+                    <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
+                </div>
+                <picture class="animation device-pile-animation">
+                    <img src="images/device-pile.png" alt="tv" class="animation-image device-pile-image">
+                    <video src="videos/video-devices.m4v" draggable="false" autoplay="" loop="" controls="" class="animation-video device-pile-video"></video>
+                </picture>
+            </div>
+        </section>
+
+        <section class="animation-card kids-space-animation-card">
+            <div class="animation-card-container kids-space-animation-card-container">
+                <div class="text kids-space-text">
+                    <h1>Crie perfis para crianças.</h1>
+                    <h2>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h2>
+                </div>
+                <picture class="animation kids-space-animation">
+                    <img src="images/kids-image.png" alt="tv" class="animation-image kids-space-image">
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
