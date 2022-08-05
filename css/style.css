@@ -294,9 +294,6 @@ h3{
     background: var(--black)
 }
 
-.strangerthinks-text{
-}
-
 .stranger-things-image{
     max-height: 5.5vw;
 }
@@ -315,7 +312,7 @@ h3{
     height: 50%;
     width: 15%;
     background-color: red;
-    background-image: url('/images/download-icon.gif');
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif');
     background-size: cover;
 
 }
