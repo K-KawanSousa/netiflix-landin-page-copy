@@ -17,6 +17,7 @@
     --black: black;
     --red: #E50914;
     --grey: #222;
+    --light-grey: #303030;
     --blue: #0071eb;
 }
 
@@ -156,7 +157,7 @@ h3{
     display: inline-block;
     margin: 10px 0;
 }
-.header .login .inputs{
+.inputs{
     width: 98%;
     height: 4rem;
     margin: 10px 0;
@@ -167,11 +168,11 @@ h3{
     margin: 20px auto;
 }
 
-.login .inputs .email-input{
+.inputs .email-input{
     padding: 8px;
 }
 
-.login .inputs div{
+.inputs div{
     width: 100%;
     position: relative;
 }
@@ -315,4 +316,45 @@ h3{
     background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif');
     background-size: cover;
 
+}
+
+/* seção de perguntas frequentes */
+.common-questions{
+    width: 60%;
+    margin: 5vw auto;
+}
+
+.common-questions .title{
+    text-align: center;
+    margin-bottom: 2.5vw;
+}
+
+.question-zone{
+    margin-bottom: 0.7vw;
+}
+
+.question-zone .question{
+    padding: 1.4vw 2vw; 
+    background-color: var(--light-grey);
+    list-style-type: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-zone .question .rotate-45{
+    transform:rotate(-45deg);
+}
+
+.question-zone .response{
+    padding: 1.4vw 2vw; 
+    display: inline-block;
+    margin-top: 1px;
+    background-color: var(--light-grey);
+}
+
+.question-zone .response h2:not(:last-child){
+    margin-bottom: 1em;
 }
