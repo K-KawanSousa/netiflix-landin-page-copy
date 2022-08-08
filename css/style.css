@@ -334,6 +334,11 @@ h3{
 }
 
 .question-zone .question{
+    -webkit-user-select: none;/* deixando o texto não selecionavel em cada navegador */
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+     user-select: none;
+
     padding: 1.4vw 2vw; 
     background-color: var(--light-grey);
     list-style-type: none;
@@ -357,4 +362,16 @@ h3{
 
 .question-zone .response h2:not(:last-child){
     margin-bottom: 1em;
+}
+
+.common-questions .login{
+    margin-top: 5vw;
+}
+
+.common-questions .login h3{
+    text-align: center;
+}
+.common-questions .login .inputs{
+    width: 46vw;
+    height: 60px;
 }
