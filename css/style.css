@@ -18,6 +18,7 @@
     --red: #E50914;
     --grey: #222;
     --light-grey: #303030;
+    --lighter-grey: #737373;
     --blue: #0071eb;
 }
 
@@ -49,6 +50,11 @@ h3{
     font-family: var(--regular-font);
     font-size: 19px;
     font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white)
 }
 
 .red-button{
@@ -122,6 +128,10 @@ h3{
     color: var(--white);
     background-color: transparent;
     margin: 0 5%;
+}
+
+.laguage-select:hover{
+    cursor: pointer;
 }
 .header nav .enter{
     padding: 6px 17px;
@@ -374,4 +384,67 @@ h3{
 .common-questions .login .inputs{
     width: 46vw;
     height: 60px;
+}
+
+.footer{/* footer */
+    border-top: 0.6vw solid var(--grey);
+
+    color: var(--lighter-grey);
+    font-weight: 200;
+    padding-bottom: 4vw;
+}
+
+.footer h4, .footer h4 a{
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.footer h4 a:hover{
+    text-decoration: underline;
+}
+
+.footer h4 a{
+    margin-bottom: 2em;
+    color: var(--lighter-grey);
+    font-weight: 200;
+}
+
+.footer-main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list-block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-list{
+    min-width: max-content;
+    margin-right: 5vw;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.footer-list li {
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+
+.footer-list li a{
+    color: var(--lighter-grey);
+    font-weight: 200;
+}
+
+.footer-list li a:hover{
+    text-decoration: underline;
+}
+
+.laguage-select{
+    margin: 4vw 0 2vw 0;
+}
+
+.laguage-select option{
+    background-color: var(--black);
 }
