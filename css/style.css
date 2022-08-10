@@ -118,7 +118,7 @@ a{
     grid-template-columns: 4fr 1fr;
     grid-auto-flow: row;
 }
-.laguage-select{
+.header .laguage-select{
     border: 1.5px solid var(--white);
     border-radius: 3px;
     font-size: 15px;
@@ -447,4 +447,213 @@ a{
 
 .laguage-select option{
     background-color: var(--black);
+}
+
+
+@media (min-width: 320px) and (max-width: 650px){    /* mobile devices */
+
+    .header{
+        height: 90vh
+    }
+
+    .header nav{
+        height: 10vw;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header nav img{
+        height: 7.5vw;
+    }
+
+    nav span{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 7px;
+        padding-top: 0;
+    }
+
+    .laguage-select{
+        margin: 0;
+        padding: 3px 15px;
+        font-size: 15px;
+    }
+
+    .header .header-mid{
+        padding-top: 0;
+    }
+
+    .header nav .enter{
+        text-align: center;
+        padding: 3px 5px;
+        margin: 0 1%;
+        width: 35%
+    }
+
+    h1{
+        font-size: 1.6em
+    }
+
+    h2{
+        font-size: 1.15em
+    }
+
+    h3{
+        font-size: 1.15em
+    }
+
+    .header .login h3, .common-questions .login h3{
+        padding: 0 9vw;
+        margin:0;
+    }
+
+    .inputs, .common-questions .inputs{
+        justify-content: center;
+
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 2.3rem;
+    }
+
+    .header .inputs .button, .common-questions .login .button{
+        width: 50%;
+        margin: 4vw auto;
+    }
+
+    header .email-comit, .common-questions .email-comit{
+        height: 40px;
+        width: 112px;
+        font-size: 1em;
+    }
+
+    .login .inputs div svg {
+        transform: scale(0.7);
+        top: 90%;
+        right: 15%;
+    }
+
+
+    /* animation-cards */
+
+    .animation-card {
+        min-height: 80vh;
+        border-bottom: 1vh solid var(--grey);
+    }
+
+    .animation-card-container{
+        width: 90vw;
+        grid-template-columns: 1fr;
+        min-height: 100%;
+        justify-items: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .animation-card-container h1{
+        margin-bottom: 0.5em;
+    }
+
+    .animation-card-container .animation{
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .animation-card-container .animation .animation-image{
+        width: 100%;
+    }
+
+    .animation-card-container .animation .video-tv{
+        position: absolute;
+        top: 14.2vw;
+        left: 12.2vw;
+        width: 73%;
+        z-index: -1;
+    }
+
+    .wath-offline-text, .kids-space-text{    /* divice mobile */
+        order: 0;
+    }
+
+    .interative-animation-download{
+        height: 22vw;
+        width: 82.2vw;
+        padding: 0.2vw 2.8vw;
+        border: 2px solid hsla(0,0%,100%,.25);
+        border-radius: 0.75em;
+        position: absolute;
+        top: 46%;
+        left: 2.7%;
+        background: var(--black);
+    }
+
+    .stranger-things-image {
+        max-height: 85%;
+    }
+
+    .strangerthinks-text #p1{
+        font-size: 0.9rem;
+    }
+
+    .strangerthinks-text #p2{
+        font-size: 0.73rem;
+        padding: 0 50px;
+        margin-left: -34px;
+    }
+
+    .device-pile-animation .device-pile-video{     /* device-pile */
+        border: 1px solid red;
+        position: absolute;
+        top: 7.1vw;
+        left: 16.7vw;
+        width: 56vw;
+        z-index: -1;
+    }
+
+    .common-questions {     /* comon questions section */
+        width: 100%;
+        margin: 5vw auto;
+    }
+
+    .question-zone {
+        margin-bottom: 2.7vw;
+    }
+
+    .question-zone .question {
+        padding: 4vw 6vw;
+    }
+
+    .thin-x{
+        width: 5vw;
+    }
+    
+    .common-questions .login h3 { /*login down*/
+        padding: 0 10vw;
+    }
+
+    .common-questions .login .inputs {
+        width: 46vw;
+        height: 114px;
+    }
+
+    .common-questions .login .inputs div svg {
+        transform: scale(0.7);
+        top: 90%;
+        right: 1%;
+    }
+
+    .footer-list li {
+        width: 30vw;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .footer .laguage-select{
+        padding: 3% 0%;
+        margin: 5vh 0 3vh 0;
+        background-color: transparent;
+        color: var(--white);
+    }
 }
