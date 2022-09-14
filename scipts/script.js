@@ -1,5 +1,9 @@
 var responseIsOpen= false;
 
+setTimeout(()=>{
+alert('Este site é uma copia! ' + '\n' + 'ciado por Kawan Sousa ')
+}, 3000)
+
 function dropdownResponse(id){
 
     let thinX= document.querySelector("#thin-x"+id)
