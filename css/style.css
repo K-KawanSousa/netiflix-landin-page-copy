@@ -192,10 +192,11 @@ a{
     font-weight: 300;
 }
 
-.login .inputs div svg{
+.button > svg{
     position: absolute;
-    top: 35%;
-    right: 5%;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
 }
 
 .main{
@@ -516,9 +517,13 @@ a{
         grid-template-rows: 3rem 2.3rem;
     }
 
-    .header .inputs .button, .common-questions .login .button{
+    .login .button{
         width: 50%;
         margin: 4vw auto;
+    }
+
+    .button > svg{
+        display: none;
     }
 
     header .email-comit, .common-questions .email-comit{
@@ -527,11 +532,6 @@ a{
         font-size: 1em;
     }
 
-    .login .inputs div svg {
-        transform: scale(0.7);
-        top: 90%;
-        right: 15%;
-    }
 
 
     /* animation-cards */
@@ -635,12 +635,6 @@ a{
     .common-questions .login .inputs {
         width: 46vw;
         height: 114px;
-    }
-
-    .common-questions .login .inputs div svg {
-        transform: scale(0.7);
-        top: 90%;
-        right: 1%;
     }
 
     .footer-list li {
